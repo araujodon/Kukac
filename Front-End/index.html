@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Araujo">
+    <meta name="description"
+        content="Tela de login feita apenas com html e css, visando aprimorar os estudos de Ryan Basque em animações">
+    <title>Login - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <form method="POST" action="index.js/">
+                    <h2>Calculo de renda per-capita</h2>
+                    <div class="input-container">
+                        <fieldset>
+                            <label for="nome">E-mail</label>
+                            <input type="text" placeholder="test@test.com">
+                        </fieldset>
+                        <fieldset>
+                            <label for="cep">CEP</label>
+                            <input type="number" placeholder="08290220">
+                        </fieldset>
+                        <fieldset>
+                            <label for="rendamensal">Renda Mensal (R$)</label>
+                            <input type="number" placeholder="5000">
+                        </fieldset>
+                        <fieldset>
+                            <label for="dependentes">Nº de Dependentes</label>
+                            <input type="number" placeholder="3">
+                        </fieldset>
+                        <fieldset>
+                        <div class="button-container">
+                            <button class="submitBtn" type="submit" onclick="sumitFormData(event)">Enviar</button>
+                        </div>
+                    </fieldset>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function sumitFormData(e) {
+            e.preventDefault();
+
+            console.log(e)
+        }
+    </script>
+</body>
+
+</html>
